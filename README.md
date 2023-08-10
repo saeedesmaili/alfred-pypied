@@ -1,6 +1,6 @@
 # pypied
 
-An alfred workflow to search for python packages in pypi and get the latest version number of a package.
+An alfred workflow to search for Python packages in pypi and get the latest version number of a package.
 
 ![demo](demo.png)
 
@@ -11,29 +11,29 @@ An alfred workflow to search for python packages in pypi and get the latest vers
 
 ## Installation
 
-Download workflow [here](https://github.com/saeedesmaili/alfred-pypied/blob/master/pypied.alfredworkflow)
+Download the workflow [here](https://github.com/saeedesmaili/alfred-pypied/blob/master/pypied.alfredworkflow).
 
 ## Usage
 
 ### Fetch the list of packages
 
-Since pypi doesn't provide an api to search for packages and it [recommends](https://peps.python.org/pep-0691/) to use `https://pypi.org/simple/` instead, this workflow fetches the list of python packages when it's used for the first time (~22MB will be downloaded). This list gets stored as a json file in workflow's directory and will be used to search for packages. To update this list you can use `pypi-fetch` keyword.
+Since pypi doesn't provide an API to search for packages and it [recommends](https://peps.python.org/pep-0691/) using `https://pypi.org/simple/` instead, this workflow fetches the list of Python packages when it's used for the first time (~22MB will be downloaded). This list gets stored as a JSON file in the workflow's directory and will be used to search for packages. To update this list you can use `pypi-fetch` keyword.
 
 ### Search for packages
 
 Use `pypi <package-name>` keyword (as shown in the demo above).
 
-First three results will have an up-to-date `latest version` and `summary` (fetched from pypi in real time). Other items in the list will only have the `name` (fetched from the local json file to prevend rate limit on pypi).
+The first three results will have an up-to-date `latest version` and `summary` (fetched from pypi in real time). Other items in the list will only have the `name` (fetched from the local JSON file to prevent rate limit on pypi).
 
-### Copy the latest version to clipboard
+### Copy the latest version to the clipboard
 
-Hitting `enter` will copy the latest version number of the package to clipboard (`0.101.0` in the demo above).
+Hitting `enter` will copy the latest version number of the package to the clipboard (`0.101.0` in the demo above).
 
 ### Open the package page on pypi
 
 Holding `Option` while hitting `Enter` will open the package's page on pypi in the default browser.
 
-### view list of the latest versions of a package
+### View a list of the latest versions of a package
 
 Use `pypi <package-name>/` to view a list of the latest versions of a package:
 
