@@ -36,3 +36,11 @@ Use `pypi <package-name>/` to view a list of the latest versions of a package:
 ![demo-releases](demo-list-releases.jpeg)
 
 Hitting `enter` in this list will copy the version number to the clipboard.
+
+## TODO & Contribution
+
+This is my first attempt to create an alfred workflow. Let me know in the issues of this repo if you have any solutions for the following TODO items, or if you can help with improving this workflow.
+
+- [ ] Display a `fetching packages ...` message when `pypi-fetch` keywords is used and the list is being downloaded.
+- [ ] Get the details of all packages in the search results in an efficient way (without requiring user to wait for the all requests to be finished and without rate limiting on pypi).
+- [ ] Display other details of the package (repo url, documentation url, etc).
