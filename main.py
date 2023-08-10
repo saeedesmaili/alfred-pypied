@@ -77,7 +77,10 @@ def get_formatted_search_results(search_results):
     for i, item in enumerate(search_results):
         ## Only fetch details for first 3 items to avoid rate limit
         if i < 3:
-            lib_info = fetch_lib(item["name"])
+            try:
+                lib_info = fetch_lib(item["name"])
+            except Exception:
+                lib_info = {"summary": "", "latest_version": ""}
         else:
             lib_info = {"summary": "", "latest_version": ""}
 
