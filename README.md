@@ -9,6 +9,10 @@ An alfred workflow to search for python packages in pypi and get the latest vers
 - Python 3
 - Alfred Powerpack
 
+## Installation
+
+Download workflow [here](https://github.com/saeedesmaili/alfred-pypied/blob/master/pypied.alfredworkflow)
+
 ## Usage
 
 ### Fetch the list of packages
